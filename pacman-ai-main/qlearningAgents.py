@@ -43,7 +43,7 @@ class QLearningAgent(ReinforcementAgent):
         ReinforcementAgent.__init__(self, **args)
 
         "*** YOUR CODE HERE ***"
-        return self.qvalue[state, action]
+        self.qvalue = util.Counter()
 
     def getQValue(self, state, action):
         """
